@@ -46,4 +46,41 @@ const rectangle = {
 rectangle.draw();
 
 ```
-2. Constructor - 
+2. Constructor - is a function that help us create an object,
+
+function Rectangle(width, height){
+  this.width = width;
+  this.height = height;
+  this.draw = () => {
+    console.log(`drawing.... Spec => width: ${this.width}, height: ${this.height}`);
+    console.log(this);
+  }
+}
+
+const rectangle = new Rectangle
+rectangle.draw()
+
+```
+primitive type: number, boolean, string, symbol, null, undefined -  are copied by there values
+
+let a = 10;
+let b = a;
+a = 20;
+
+console.log({a,b});
+
+let x =  {value: 15};
+let y = x;
+
+x.value = 10;
+
+console.log(x.value);
+console.log(y.value);
+
+```
+
+
+```
+reference types: object(are copied by there reference), function and array
+
+```
