@@ -32,4 +32,18 @@ console.log(employee.getMonthlyPay())
 ```
 
 
-Factories are functions used to generate an object.
+1. Factories - are functions used to generate an object.
+```
+const rectangle = {
+  width: 10,
+  height: 10,
+  location: {x:0, y:0},
+  draw(){
+    console.log(`drawing....Spec => width: ${this.width}, height: ${this.height}`)
+  },
+};
+
+rectangle.draw();
+
+```
+2. Constructor - 
